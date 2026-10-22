@@ -174,3 +174,96 @@ textarea:disabled {
   outline-offset: 4px;
   border-radius: 3px;
 }
+
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+}
+
+.footer-brand .brand-logo {
+  display: block;
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.footer-brand .brand-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer-brand .brand-copy strong {
+  font-size: 1.05rem;
+  line-height: 1.3;
+}
+
+.footer-brand .brand-copy small {
+  font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+  .footer-brand .brand-logo {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+
+/* DJ's Adult Family Home logo */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+.brand-logo {
+  display: block;
+  width: 64px;
+  height: 64px;
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+
+.brand-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.brand-copy strong {
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.brand-copy small {
+  line-height: 1.4;
+}
+
+.footer-brand .brand-logo {
+  width: 72px;
+  height: 72px;
+}
+
+@media (max-width: 600px) {
+  .brand {
+    gap: 8px;
+  }
+
+  .brand-logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .footer-brand .brand-logo {
+    width: 56px;
+    height: 56px;
+  }
+}
