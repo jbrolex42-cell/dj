@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta
+    name="description"
+    content="Manage your account with DJ’s Adult Family Home."
+  >
+
+  <meta name="robots" content="noindex, nofollow">
+
+  <title>Your Account | DJ’s Adult Family Home</title>
+
+  <link rel="stylesheet" href="/account.css">
+  <script src="/account.js" defer></script>
+</head>
+
+<body data-page="account">
+  <header class="top">
+    <a
+      class="brand"
+      href="/"
+      aria-label="DJ’s Adult Family Home homepage"
+    >
+      <span class="mark">DJ</span>
+
+      <span>
+        <strong>DJ’s Adult Family Home</strong>
+        <small>Care, comfort &amp; connection</small>
+      </span>
+    </a>
+
+    <a class="link" href="/">Homepage →</a>
+  </header>
+
+  <main class="layout">
+    <section class="intro">
+      <span class="eyebrow">YOUR ACCOUNT</span>
+
+      <h1>
+        Welcome to <span>DJ’s.</span>
+      </h1>
+
+      <p id="welcome" aria-live="polite">
+        Checking your account…
+      </p>
+
+      <div class="points">
+        <span>Explore care information</span>
+        <span>Contact the home directly</span>
+        <span>Ask about visits and availability</span>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="accountHeading">
+      <h2 id="accountHeading">Account details</h2>
+
+      <p class="sub">
+        Your signed-in account information is shown below.
+      </p>
+
+      <div class="field">
+        <label for="details">Email address</label>
+
+        <p
+          id="details"
+          aria-live="polite"
+          style="margin:0; overflow-wrap:anywhere;"
+        >
+          Loading your profile…
+        </p>
+      </div>
+
+      <a
+        class="btn"
+        style="display:block; text-align:center; text-decoration:none;"
+        href="/#contact"
+      >
+        Contact the home
+      </a>
+
+      <button
+        class="btn"
+        id="logout"
+        type="button"
+        style="background:#e9eef8; color:#24334b;"
+      >
+        Sign out
+      </button>
+
+      <p
+        class="notice"
+        id="notice"
+        aria-live="polite"
+        role="status"
+      ></p>
+
+      <p class="fineprint">
+        Need help with your account?
+        <a href="/#contact">Contact DJ’s Adult Family Home</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    © <span id="year"></span> DJ’s Adult Family Home ·
+    <a href="/">Back to homepage</a>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta
+    name="description"
+    content="Create an account with DJ’s Adult Family Home."
+  >
+
+  <title>Register | DJ’s Adult Family Home</title>
+
+  <link rel="stylesheet" href="/account.css">
+  <script src="/account.js" defer></script>
+</head>
+
+<body>
+  <header class="top">
+    <a class="brand" href="/" aria-label="DJ’s Adult Family Home homepage">
+      <span class="mark">DJ</span>
+
+      <span>
+        <strong>DJ’s Adult Family Home</strong>
+        <small>Care, comfort &amp; connection</small>
+      </span>
+    </a>
+
+    <a class="link" href="/login.html">
+      Already registered? Login →
+    </a>
+  </header>
+
+  <main class="layout">
+    <section class="intro">
+      <span class="eyebrow">START A CONVERSATION</span>
+
+      <h1>
+        Make the next step <span>feel simpler.</span>
+      </h1>
+
+      <p>
+        Create an account to get started. If you prefer, you can still browse
+        the website and send an inquiry without registering.
+      </p>
+
+      <div class="points">
+        <span>Helpful information in one place</span>
+        <span>Direct communication with the home</span>
+        <span>Your password is securely hashed</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Create account</h2>
+      <p class="sub">Fill in your details to register.</p>
+
+      <form id="accountForm" data-mode="register">
+        <div class="field">
+          <label for="name">Full name</label>
+
+          <input
+            id="name"
+            name="name"
+            type="text"
+            autocomplete="name"
+            required
+            minlength="2"
+            maxlength="100"
+          >
+        </div>
+
+        <div class="field">
+          <label for="email">Email address</label>
+
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            required
+            maxlength="200"
+          >
+        </div>
+
+        <div class="field">
+          <label for="password">Create password</label>
+
+          <div class="password-wrap">
+            <input
+              id="password"
+              name="password"
+              type="password"
+              autocomplete="new-password"
+              required
+              minlength="6"
+              maxlength="200"
+            >
+
+            <button
+              type="button"
+              class="toggle-password"
+              data-target="password"
+              aria-label="Show password"
+              aria-pressed="false"
+              title="Show password"
+            >
+              <svg
+                class="eye-icon"
+                viewBox="0 0 24 24"
+                width="22"
+                height="22"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"
+                />
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+            </button>
+          </div>
+
+          <small class="field-help">
+            Use at least 6 characters.
+          </small>
+        </div>
+
+        <div class="field">
+          <label for="confirmPassword">Confirm password</label>
+
+          <div class="password-wrap">
+            <input
+              id="confirmPassword"
+              name="confirmPassword"
+              type="password"
+              autocomplete="new-password"
+              required
+              minlength="6"
+              maxlength="200"
+            >
+
+            <button
+              type="button"
+              class="toggle-password"
+              data-target="confirmPassword"
+              aria-label="Show password"
+              aria-pressed="false"
+              title="Show password"
+            >
+              <svg
+                class="eye-icon"
+                viewBox="0 0 24 24"
+                width="22"
+                height="22"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"
+                />
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <button
+          class="btn"
+          id="submitButton"
+          type="submit"
+        >
+          Create account
+        </button>
+
+        <p
+          class="notice"
+          id="notice"
+          aria-live="polite"
+          role="status"
+        ></p>
+      </form>
+
+      <p class="fineprint">
+        Please provide accurate information and keep your password private.
+      </p>
+
+      <p class="fineprint">
+        Already have an account?
+        <a href="/login.html">Sign in here</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    © <span id="year"></span> DJ’s Adult Family Home ·
+    <a href="/">Back to homepage</a>
+  </footer>
+</body>
+</html>

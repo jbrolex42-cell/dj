@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta
+    name="description"
+    content="Sign in to your DJ’s Adult Family Home account."
+  >
+
+  <title>Login | DJ’s Adult Family Home</title>
+
+  <link rel="stylesheet" href="/account.css">
+  <script src="/account.js" defer></script>
+</head>
+
+<body>
+  <header class="top">
+    <a class="brand" href="/" aria-label="DJ’s Adult Family Home homepage">
+      <span class="mark">DJ</span>
+
+      <span>
+        <strong>DJ’s Adult Family Home</strong>
+        <small>Care, comfort &amp; connection</small>
+      </span>
+    </a>
+
+    <a class="link" href="/register.html">Create account →</a>
+  </header>
+
+  <main class="layout">
+    <section class="intro">
+      <span class="eyebrow">WELCOME BACK</span>
+
+      <h1>
+        Care decisions start with <span>connection.</span>
+      </h1>
+
+      <p>
+        Sign in to access your account and continue your conversations about care.
+        You can also contact DJ’s Adult Family Home directly without creating an account.
+      </p>
+
+      <div class="points">
+        <span>Simple, secure account access</span>
+        <span>Keep your care search moving</span>
+        <span>Connect directly with the home</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Log in</h2>
+      <p class="sub">Enter your account details below.</p>
+
+      <form id="accountForm" data-mode="login">
+        <div class="field">
+          <label for="email">Email address</label>
+
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            required
+            maxlength="200"
+          >
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+
+          <div class="password-wrap">
+            <input
+              id="password"
+              name="password"
+              type="password"
+              autocomplete="current-password"
+              required
+              maxlength="200"
+            >
+
+            <button
+              type="button"
+              class="toggle-password"
+              data-target="password"
+              aria-label="Show password"
+              aria-pressed="false"
+              title="Show password"
+            >
+              <svg
+                class="eye-icon"
+                viewBox="0 0 24 24"
+                width="22"
+                height="22"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"
+                />
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <button
+          class="btn"
+          id="submitButton"
+          type="submit"
+        >
+          Sign in
+        </button>
+
+        <p
+          class="notice"
+          id="notice"
+          aria-live="polite"
+          role="status"
+        ></p>
+      </form>
+
+      <p class="fineprint">
+        Need an account?
+        <a href="/register.html">Register here</a>.
+        Administrator access is separate:
+        <a href="/admin.html">Admin login</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    © <span id="year"></span> DJ’s Adult Family Home ·
+    <a href="/">Back to homepage</a>
+  </footer>
+</body>
+</html>
